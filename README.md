@@ -9,20 +9,6 @@ Sitio web dedicado a la cultura hip hop latinoamericana. Proyecto académico con
 - Git y GitHub para control de versiones
 - GitHub Pages para publicación
 
-## 📁 Estructura del proyecto
-under-vibes-web/ 
-├── index.html 
-├── pages/
-│ ├── noticias.html
-│ ├── eventos.html
-│ ├── reacciones.html
-│ ├── contacto.html
-├── assets/
-│ ├── css/
-│ │ └── styles.css
-│ ├── img/
-│ │ └── [imágenes del sitio]
-
 ---
 
 ## 🚀 Sitio publicado
