@@ -1,0 +1,278 @@
+/* ===================== GOOGLE FONTS ===================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* ===================== VARIABLES ===================== */
+:root {
+  --color-bg: #0d0d0d;
+  --color-text: #f2f2f2;
+  --color-muted: #999;
+  --color-acento: #ff4747;
+  --color-acento-hover: #e63b3b;
+  --color-card: #1a1a1a;
+  --espaciado: 60px;
+  --radio: 8px;
+  --sombra-suave: 0 0 10px rgba(255, 71, 71, 0.08);
+}
+
+/* ===================== RESET ===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* ===================== UTILITARIAS ===================== */
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--color-text);
+}
+
+.text-muted {
+  color: var(--color-muted) !important;
+}
+
+.btn-primary-custom {
+  background-color: var(--color-acento);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-weight: 600;
+  border-radius: var(--radio);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+  background-color: var(--color-acento-hover);
+}
+
+.card-custom {
+  background-color: var(--color-card);
+  padding: 20px;
+  border-radius: var(--radio);
+  box-shadow: var(--sombra-suave);
+  transition: transform 0.3s ease;
+}
+
+.card-custom:hover {
+  transform: scale(1.02);
+}
+
+/* ===================== HERO ===================== */
+.hero {
+  position: relative;
+  background-image: url('../img/banner-prueba.webp');
+  background-size: cover;
+  background-position: center;
+  padding: var(--espaciado) 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.8));
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: var(--color-muted);
+}
+
+.hero button {
+  background-color: var(--color-acento);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: var(--radio);
+  transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: var(--color-acento-hover);
+}
+
+.hero-video {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-video .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: 1;
+}
+
+.hero-video .container {
+  z-index: 2;
+}
+
+.card-custom {
+  border: none;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card-custom:hover {
+  transform: translateY(-5px);
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.cta-youtube {
+  background: linear-gradient(to right, #111, #222);
+}
+
+/* ===================== FORMULARIO ===================== */
+.form-contacto {
+  background-color: #1c1c1c;
+  border: 1px solid #333;
+}
+
+.form-contacto .form-label {
+  color: #ccc;
+  font-weight: 500;
+}
+
+.form-contacto .form-control {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  color: #fff;
+}
+
+.form-contacto .form-control:focus {
+  border-color: #ff3c3c;
+  box-shadow: none;
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.btn-primary-custom {
+  background-color: #ff3c3c;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+  background-color: #e62e2e;
+}
+
+
+/* ===================== FOOTER ===================== */
+footer img {
+  width: 30px;
+  transition: transform 0.2s ease;
+}
+
+footer img:hover {
+  transform: scale(1.2);
+}
+
+/* ===================== CTA YOUTUBE ===================== */
+.cta-youtube {
+  background-color: var(--color-acento);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: var(--radio);
+}
+
+.cta-youtube img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.cta-youtube p {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .btn-primary-custom {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+
+  .galeria img {
+    width: 90%;
+  }
+
+  .cta-youtube img {
+    width: 35px;
+  }
+
+  .cta-youtube p {
+    font-size: 1rem;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer img {
+    width: 25px;
+  }
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos</title>
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body class="bg-dark text-light">
+    <!-- NAVBAR (idéntico al index) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+      <div class="container-fluid px-4">
+        <a class="navbar-brand" href="../index.html">
+          <img
+            src="../assets/img/logo.webp"
+            alt="Logo Under Vibes"
+            style="max-height: 50px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+          <ul class="navbar-nav gap-4">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./noticias.html">NOTICIAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./eventos.html">EVENTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./reacciones.html">REACCIONES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">CONTACTO</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="eventos">
+
+    <!-- Imagen destacada -->
+    <section class="container text-center py-5">
+      <img src="../assets/img/eventos-hero.jpg" alt="Eventos en vivo" class="img-fluid rounded mb-4" style="max-width: 600px;">
+      <h1 class="section-title">Próximos Shows y Streamings</h1>
+      <p class="text-muted mb-3">Enterate de todos los eventos que no te podés perder en la cultura HH.</p>
+      <button class="btn btn-danger">Ver agenda completa</button>
+    </section>
+
+    <!-- Eventos presenciales -->
+    <section class="container py-5">
+      <h2 class="section-title">Conciertos en vivo</h2>
+      <div class="row justify-content-center g-4">
+
+        <div class="col-md-4">
+          <div class="card-custom text-center">
+            <img src="../assets/img/concierto1.jpg" alt="Concierto 1" class="img-fluid rounded mb-3">
+            <h3>Acru — 21 Sep (Buenos Aires)</h3>
+            <a href="#" class="btn btn-danger mt-2">Comprar entrada</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card-custom text-center">
+            <img src="../assets/img/concierto2.jpg" alt="Concierto 2" class="img-fluid rounded mb-3">
+            <h3>Wos — 5 Oct (Córdoba)</h3>
+            <a href="#" class="btn btn-danger mt-2">Comprar entrada</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card-custom text-center">
+            <img src="../assets/img/concierto3.jpg" alt="Concierto 3" class="img-fluid rounded mb-3">
+            <h3>Trueno — 12 Oct (Rosario)</h3>
+            <a href="#" class="btn btn-danger mt-2">Comprar entrada</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Eventos en streaming -->
+    <section class="container py-5">
+      <h2 class="section-title">Streamings Exclusivos</h2>
+      <div class="row justify-content-center g-4">
+
+        <div class="col-md-4">
+          <div class="card-custom text-center">
+            <img src="../assets/img/stream1.jpg" alt="Streaming 1" class="img-fluid rounded mb-3">
+            <h3>Freestyle Sessions — 30 Ago (Online)</h3>
+            <a href="#" class="btn btn-danger mt-2">Comprar acceso</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card-custom text-center">
+            <img src="../assets/img/stream2.jpg" alt="Streaming 2" class="img-fluid rounded mb-3">
+            <h3>Documental HH — 15 Sep (Online)</h3>
+            <a href="#" class="btn btn-danger mt-2">Comprar acceso</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card-custom text-center">
+            <img src="../assets/img/stream3.jpg" alt="Streaming 3" class="img-fluid rounded mb-3">
+            <h3>Entrevista a Duki — 28 Sep (Online)</h3>
+            <a href="#" class="btn btn-danger mt-2">Comprar acceso</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="container py-5">
+  <h2 class="section-title text-center mb-4">Contacto</h2>
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <form class="form-contacto bg-dark p-4 rounded shadow">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre completo *</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email *</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje *</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            rows="5"
+            class="form-control"
+            required
+          ></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary-custom px-5">
+            Enviar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="py-4 bg-dark text-center">
+    <div class="container d-flex justify-content-center gap-3">
+      <a href="#"><img src="../assets/img/icon-facebook.png" alt="Facebook" class="img-fluid" style="width: 30px;"></a>
+      <a href="#"><img src="../assets/img/icon-instagram.png" alt="Instagram" class="img-fluid" style="width: 30px;"></a>
+      <a href="#"><img src="../assets/img/icon-youtube.png" alt="YouTube" class="img-fluid" style="width: 30px;"></a>
+    </div>
+  </footer>
+
+</body>
+</html>
