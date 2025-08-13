@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio</title>
 
-    <!-- Bootstrap CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,11 +14,13 @@
       defer
     ></script>
 
-    <!-- Estilos personalizados -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body class="bg-dark text-light">
-    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
       <div class="container-fluid px-4">
         <a class="navbar-brand" href="./index.html">
@@ -59,25 +60,25 @@
       </div>
     </nav>
 
-    <!-- HERO SECTION -->
     <section
       class="hero d-flex align-items-center justify-content-center text-center text-light"
       style="min-height: 85vh"
     >
       <div class="hero-overlay"></div>
       <div class="hero-content position-relative z-1 px-3">
-        <h1 class="display-4 fw-bold mb-3">Under Vibes</h1>
+        <h1 class="display-4 fw-bold mb-3">
+          Toda la data de la cultura en un solo lugar
+        </h1>
         <p class="lead mb-4">
-          La cultura HH en su máxima expresión. Noticias, eventos y reacciones
-          sin filtro.
+          Enterate de las últimas noticias, eventos y reacciones del mundo del
+          freestyle y el rap.
         </p>
         <a href="./pages/noticias.html" class="btn btn-primary-custom"
-          >Explorar</a
+          >Mas informacion</a
         >
       </div>
     </section>
 
-    <!-- CARRUSEL DE NOTICIAS -->
     <section class="container py-5">
       <h2 class="section-title">Últimas Noticias</h2>
       <div
@@ -87,36 +88,60 @@
         data-bs-interval="20000"
       >
         <div class="carousel-inner rounded shadow">
-          <div class="carousel-item active">
+          <div class="carousel-item active position-relative">
             <a href="./pages/noticias.html">
               <img
-                src="./assets/img/imagen-prueba.webp"
+                src="./assets/img/chili-vs-aczino.webp"
                 class="d-block w-100"
                 alt="Noticia 1"
               />
+              <div
+                class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3"
+              >
+                <h5>Batalla de titanes</h5>
+                <p>
+                  Los mejores batalleros se enfrentaron en una jornada épica.
+                </p>
+              </div>
             </a>
           </div>
-          <div class="carousel-item">
+
+          <div class="carousel-item position-relative">
             <a href="./pages/noticias.html">
               <img
-                src="./assets/img/imagen-prueba.webp"
+                src="./assets/img/Trueno-1.webp"
                 class="d-block w-100"
                 alt="Noticia 2"
               />
+              <div
+                class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3"
+              >
+                <h5>Nuevo disco de Trueno</h5>
+                <p>Un viaje sonoro por sus raíces y evolución artística.</p>
+              </div>
             </a>
           </div>
-          <div class="carousel-item">
+
+          <div class="carousel-item position-relative">
             <a href="./pages/noticias.html">
               <img
-                src="./assets/img/imagen-prueba.webp"
+                src="./assets/img/acru-entrevista.webp"
                 class="d-block w-100"
                 alt="Noticia 3"
               />
+              <div
+                class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3"
+              >
+                <h5>Entrevista con Acru</h5>
+                <p>
+                  Nos habla sobre su proceso creativo y visión del rap
+                  argentino.
+                </p>
+              </div>
             </a>
           </div>
         </div>
 
-        <!-- Controles -->
         <button
           class="carousel-control-prev"
           type="button"
@@ -136,20 +161,19 @@
       </div>
     </section>
 
-    <!-- EVENTOS DESTACADOS -->
     <section class="container py-5">
       <h2 class="section-title">Eventos Destacados</h2>
       <div class="row justify-content-center g-4">
         <div class="col-md-4">
           <div class="card-custom text-center">
             <img
-              src="./assets/img/concierto1.jpg"
+              src="./assets/img/ysya-buenosaires.webp"
               alt="Evento 1"
               class="img-fluid rounded mb-3"
             />
-            <h3>Acru — 21 Sep (Buenos Aires)</h3>
+            <h3>YSY A — 27 Sep (Buenos Aires)</h3>
             <a
-              href="./pages/eventos.html"
+              href="https://livepass.com.ar/events/ysy-a-en-el-hipodromo-de-la-plata"
               class="btn btn-primary-custom mt-2"
               >Ver evento</a
             >
@@ -158,13 +182,13 @@
         <div class="col-md-4">
           <div class="card-custom text-center">
             <img
-              src="./assets/img/concierto2.jpg"
+              src="./assets/img/kendrick-river.webp"
               alt="Evento 2"
               class="img-fluid rounded mb-3"
             />
-            <h3>Wos — 5 Oct (Córdoba)</h3>
+            <h3>Kendrick — 4 Oct (Buenos Aires)</h3>
             <a
-              href="./pages/eventos.html"
+              href="https://www.allaccess.com.ar/event/kendrick-lamar-venta-general"
               class="btn btn-primary-custom mt-2"
               >Ver evento</a
             >
@@ -173,13 +197,13 @@
         <div class="col-md-4">
           <div class="card-custom text-center">
             <img
-              src="./assets/img/concierto3.jpg"
+              src="./assets/img/duki-buenosaires.webp"
               alt="Evento 3"
               class="img-fluid rounded mb-3"
             />
-            <h3>Trueno — 12 Oct (Rosario)</h3>
+            <h3>Duki — 6 Nov (Buenos Aires)</h3>
             <a
-              href="./pages/eventos.html"
+              href="https://www.movistararena.com.ar/show/e69127ec-55d8-4a59-b6c5-a7fdaa536615"
               class="btn btn-primary-custom mt-2"
               >Ver evento</a
             >
@@ -188,61 +212,63 @@
       </div>
     </section>
 
-    <!-- FORMULARIO -->
-   <section class="container py-5">
-  <h2 class="section-title text-center mb-4">Contacto</h2>
-  <div class="row justify-content-center">
-    <div class="col-lg-8">
-      <form class="form-contacto bg-dark p-4 rounded shadow">
-        <div class="mb-3">
-          <label for="nombre" class="form-label">Nombre completo *</label>
-          <input
-            type="text"
-            id="nombre"
-            name="nombre"
-            class="form-control"
-            required
-          />
+    <section class="container py-5">
+      <h2 class="section-title text-center mb-4">Contacto</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <form class="form-contacto bg-dark p-4 rounded shadow">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre completo *</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje *</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="5"
+                class="form-control"
+                required
+              ></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary-custom px-5">
+                Enviar
+              </button>
+            </div>
+          </form>
         </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email *</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            class="form-control"
-            required
-          />
-        </div>
-        <div class="mb-3">
-          <label for="mensaje" class="form-label">Mensaje *</label>
-          <textarea
-            id="mensaje"
-            name="mensaje"
-            rows="5"
-            class="form-control"
-            required
-          ></textarea>
-        </div>
-        <div class="text-center">
-          <button type="submit" class="btn btn-primary-custom px-5">
-            Enviar
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
-</section>
-
-
-  <!-- FOOTER -->
-  <footer class="py-4 bg-dark text-center">
-    <div class="container d-flex justify-content-center gap-3">
-      <a href="#"><img src="./assets/img/icono-facebook.png" alt="Facebook" class="img-fluid" style="width: 30px;"></a>
-      <a href="#"><img src="./assets/img/icono-instagram.png" alt="Instagram" class="img-fluid" style="width: 30px;"></a>
-      <a href="#"><img src="./assets/img/icono-youtube.png" alt="YouTube" class="img-fluid" style="width: 30px;"></a>
-    </div>
-  </footer>
-
-</body>
+      </div>
+    </section>
+    
+    <footer class="py-4 bg-dark text-center text-white">
+      <div class="container d-flex justify-content-center gap-4">
+        <a href="#" class="text-white">
+          <i class="fa-brands fa-facebook fa-xl"></i>
+        </a>
+        <a href="#" class="text-white">
+          <i class="fa-brands fa-instagram fa-xl"></i>
+        </a>
+        <a href="#" class="text-white">
+          <i class="fa-brands fa-youtube fa-xl"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>
